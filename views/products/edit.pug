@@ -1,0 +1,24 @@
+extend ../layout
+block content 
+    h1 Edit faculty member 
+    form(action="/products/edit/"+products._id,method="post")
+        .form-group
+            label(for="name")  Name
+            input#name(type="text", class="form-control", name="name",value=products.name)
+        .form-group
+            label(for="price") Gender
+            input#price(type="text", class="form-control", name="price",value=products.gender)
+        .form-group
+            label(for="email") Email
+            input#email(type="text", class="form-control", name="email", value=products.email)
+        .form-group
+            label(for="coursecode") Coursecode
+            input#coursecode(type="text", class="form-control", name="coursecode" ,value=products.coursecode)
+        .form-group
+            label(for="address") Address
+            input#address(type="text", class="form-control", name="address",value=products.address)
+        .form-group
+            label(for="phoneno") Phone no
+            input#phoneno(type="number", class="form-control", name="phoneno",value=products.phoneno)
+        input(type="submit", class="btn btn-info")
+            

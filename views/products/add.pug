@@ -1,0 +1,25 @@
+extend ../layout
+block content 
+    h1 Add a new faculty member
+    form(action="/products/add",method="post")
+        .form-group
+            label(for="name") Name
+            input#name(type="text", class="form-control", name="name")
+        .form-group
+            label(for="gender") Gender
+            input#gender(type="text", class="form-control", name="gender")
+        .form-group
+            label(for="email") Email
+            input#email(type="text", class="form-control", name="email")
+        .form-group
+            label(for="coursecode") Coursecode
+            input#coursecode(type="text", class="form-control", name="coursecode")
+        .form-group
+            label(for="address") Address
+            input#address(type="text", class="form-control", name="address")
+        .form-group
+            label(for="phoneno") Phone no
+            input#phoneno(type="number", class="form-control", name="phoneno")
+        input(type="submit", class="btn btn-info")
+
+            
